@@ -1,5 +1,5 @@
 # tip-calculator
-calculates tip
+calculates tip of a person or group of people
 ![Design](https://github.com/Eugene44-hub/tip-calculator/blob/main/tip-calculator/finished-desktop-tip.png)
 ![Design](https://github.com/Eugene44-hub/tip-calculator/blob/main/tip-calculator/mobile-tip-cal.png)
 <br/>
