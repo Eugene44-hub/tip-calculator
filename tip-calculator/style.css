@@ -1,0 +1,199 @@
+    @import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Space Mono', monospace;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 90%;
+        margin: auto;
+        padding-top: 100px;
+    }
+    
+    body {
+        background-color: hsl(185, 41%, 84%);
+    }
+    
+    .heading {
+        width: 20%;
+        margin: auto;
+        padding-bottom: 100px;
+    }
+    
+    .calculator {
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        max-width: 750px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        box-shadow: 0 15px 20px hsl(185, 41%, 84%), 0 19px 20px rgb(177, 174, 174);
+        border-radius: 20px;
+    }
+    
+    input {
+        margin: 10px 0 10px 0;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+    
+    .select input {
+        width: 31%;
+        background-color: hsl(183, 100%, 15%);
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .select {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    label[for=select] {
+        flex: 100%;
+    }
+    
+    #custom {
+        cursor: auto;
+        background-color: hsl(189, 41%, 97%);
+    }
+    
+    #custom::placeholder {
+        color: hsl(186, 14%, 43%);
+    }
+    
+    .bill input,
+    .people input {
+        background-color: hsl(189, 41%, 97%);
+        width: 93.1%;
+        text-align: right;
+        font-size: 24px;
+    }
+    
+    .col1 {
+        flex: 40%;
+    }
+    
+    .result {
+        border-radius: 15px;
+        background-color: hsl(183, 100%, 15%);
+        padding: 25px;
+    }
+    
+    .bill,
+    .containResult,
+    .select,
+    .people {
+        padding: 10px;
+    }
+    
+    .contain {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #amount {
+        color: hsl(189, 41%, 97%);
+        font-weight: bold;
+    }
+    
+    #person {
+        color: hsl(184, 14%, 56%);
+    }
+    
+    .total {
+        padding-top: 50px
+    }
+    
+    .answer1,
+    .answer2 {
+        color: hsl(189, 41%, 97%);
+        font-size: 35px;
+        font-weight: bold;
+        color: hsl(172, 67%, 45%);
+    }
+    
+    #reset {
+        width: 100%;
+        padding: 10px;
+        text-transform: uppercase;
+        background-color: hsl(183, 95%, 22%);
+        font-size: 17px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        margin-top: 125px;
+        color: hsl(185, 41%, 25%);
+    }
+    
+    #people {
+        background-image: url('images/icon-person.svg');
+    }
+    
+    #bill {
+        background-image: url('images/icon-dollar.svg');
+    }
+    
+    .select input:focus {
+        background-color: hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
+    }
+    
+    #people:focus,
+    #bill:focus {
+        border: 1px solid hsl(172, 67%, 45%);
+    }
+    
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+        appearance: none;
+    }
+    
+    #bill,
+    #people {
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 4%;
+        padding: 10px;
+        color: hsl(183, 100%, 15%);
+        font-weight: bold;
+    }
+    
+    label[for=people],
+    label[for=select],
+    label[for=bill] {
+        color: hsl(186, 14%, 43%);
+        font-size: small;
+        font-weight: bold;
+    }
+    
+    #bill::placeholder,
+    #people::placeholder {
+        color: hsl(186, 14%, 43%);
+    }
+    
+    .inputs {
+        font-weight: 24px;
+    }
+    
+    @media screen and (max-width:720px) {
+        .col1 {
+            flex: 100%;
+        }
+        .respond {
+            flex: 40%;
+            margin: 10px;
+        }
+    }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="heading">
+                <header>
+                    <img src="images/logo.svg" alt="logo">
+                </header>
+            </div>
+
+
+            <div class="calculator">
+                <div class="col1 space">
+                    <div class="inputs ">
+                        <div class="bill">
+                            <label for="bill">Bill</label>
+                            <div>
+                                <input type="number" id="bill" placeholder="0">
+                            </div>
+
+                        </div>
+
+                        <div class="select space">
+                            <label for="select">Select</label><br>
+                            <input type="text" class="respond" value="5%" name="5%" readonly>
+                            <input type="text" value="10%" readonly class="respond" name="10%">
+                            <input type="text" value="15%" readonly class="respond" name="15%">
+                            <input type="text" value="25%" readonly class="respond" name="25%">
+                            <input type="text" value="50%" readonly class="respond" name="50%">
+                            <input type="number" id="custom" placeholder="Custom" class="respond">
+                        </div>
+
+                        <div class="space people">
+                            <label for="people">Number of people</label>
+                            <label for="people" id="notZero" style="color: red; float: right; display: none;">Can't be zero</label>
+                            <input type="number" id="people" placeholder="0">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col1 containResult">
+                    <div class="result">
+                        <div class="contain">
+                            <p id="amount">Tip Amount <br> /
+                                <span id="person"> person</span> </p>
+                            <div class="answer1">$0.00</div>
+                        </div>
+
+                        <div class="contain total">
+                            <p id="amount">Total <br> / <span id="person">person</span> </p>
+                            <div class="answer2">$0.00</div>
+                        </div>
+                        <button id="reset">reset</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
